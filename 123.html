@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TrocaPrime — Venda de Carros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --card:#111218;
+      --accent:#007bff;
+      --accent-2:#ff7b00;
+      --text:#e6e7eb;
+      --muted:#a7adba;
+      --brand:#ff7b00;
+      --titulo:#70a6cc;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --maxw:1100px;
+  {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0b0c10;
+  color: #e6e7eb;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card img,
+.gallery img,
+article.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hero__img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  background: #111218;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.nav__in {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.brand__logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  background: #111218;
+  margin-right: 8px;
+}
+
+.nav__links {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.nav__links a {
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav__links a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero__content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.hero__box {
+  background: rgba(17,18,24,0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero__title {
+  font-size: 28px;
+}
+
+.hero__subtitle {
+  color: #a7adba;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #007bff;
+  color: white;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #111218;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  gap: 15px;
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .grid--2, .grid--3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.gallery img {
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  color: #a7adba;
+}
+  </style>
+</head>
+<body>
+</body>
+</html>
+
+<nav class="nav">
+    <div class="nav__in">
+      <div class="brand"><span class="brand__logo" aria-hidden="true"></span> TrocaPrime</div>
+      <div class="nav__links">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#financiamento">Financiamento</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#blog">Blog</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <img class="hero__img" src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" alt="Showroom de carros">
+    <div class="hero__gradient"></div>
+    <div class="hero__content">
+      <div class="hero__box">
+        <h1 class="hero__title">TrocaPrime: Seu próximo carro está aqui</h1>
+        <p class="hero__subtitle">Veículos novos e seminovos com garantia e preços imperdíveis.</p>
+        <div class="cta">
+          <a class="btn btn--primary" href="#catalogo">Ver Catálogo</a>
+          <a class="btn btn--ghost" href="#ofertas">Ofertas Especiais</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre" class="card">
+      <h2>Sobre a TrocaPrime</h2>
+      <p>A TrocaPrime é referência no mercado automotivo quando o assunto é venda de veículos novos e seminovos de luxo. Trabalhamos sempre com seriedade e excelência para que cada cliente tenha uma experiência única na hora de escolher o próximo carro. Temos as principais marcas de luxo do mundo, conhecidas pelo design sofisticado, desempenho impressionante e tecnologia de ponta. Mais do que vender, nosso objetivo é oferecer confiança, exclusividade e um atendimento próximo e diferenciado.</p>
+    </section>
+
+    <section id="catalogo" class="grid grid--3">
+      <div class="card">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/img-1032-jpg-649ae90b12d3d.jpg" alt="Carro SUV branco">
+        <h3 style="color:#007bff">Bmw M4 2023</h3>
+        <p>Motor: 3.0L seis cilindros em linha, biturbo
+        <br>Potência: 473 cv 650 Nm
+        <br>Consumo médio: 6,8 km/l a  9,7km/l
+        <br>Peso: 1.835 kg</p>
+        <p><strong>R$ 1.399.950</strong></p>
+      </div>
+      <div class="card">
+        <img src="https://img0.icarros.com/dbimg/imgadicionalanuncio/1/438535900_1" alt="Carro esportivo vermelho">
+        <h3 style="color:#007bff">Ford Mustang 2021</h3>
+        <p>Motor: VB Coyote 5.0 litros
+        <br>Potência: 480 cv e 420 nm
+        <br>Consumo médio: 5,9 km/l a 8,7 km/l
+        <br>Peso: 1.861 kg
+        <p><strong>R$ 389.900</strong></p>
+      </div>
+      <div class="card">
+        <img src="https://www.automaistv.com.br/wp-content/uploads/2024/10/5FbD8Ftw-Porsche-911-Turbo-12-scaled.webp" alt="Carro hatch azul">
+        <h3 style="color:#007bff">Porsche 911 Turbo 2023</h3>
+        <p>Motor: boxer 6 cilindros biturbo de 3,7 litros
+        <br>Potência: 572 cv e 750 nm
+        <br>Consumo médio: 6,1 km/l a 7,9km/l
+        <br>Peso: 1.715 kg
+        <p><strong>R$ 1.498.000</strong></p>
+      </div>
+    </section>
+
+    <section id="ofertas" class="card">
+      <h2>Ofertas Especiais</h2>
+      <ul>
+        <li>Taxa zero para veículos novos</li>
+        <li>Desconto de até 15% em seminovos selecionados</li>
+        <li>Troca na chave na hora</li>
+        <li>Pagar a vista tem desconto de 15%</li>
+      </ul>
+    </section>
+
+    <section id="financiamento" class="card">
+      <h2>Opções de Financiamento</h2>
+      <ul>
+        <li>Parcele seu carro em até 60x com as melhores taxas do mercado.</li> 
+        <li>Trabalhamos com os principais bancos.</li>
+        <li>Pague com pix</li>
+        <ul>
+    </section>
+
+    <section id="galeria" class="card">
+      <h2>Galeria</h2>
+      <div class="gallery">
+        <img src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" alt="">
+      </div>
+    </section>
+
+   <section id="blog" class="card">
+  <h2>Blog TrocaPrime</h2>
+  <p>Fique por dentro das últimas notícias, dicas e novidades do mundo automotivo.</p>
+  <div class="grid grid--3">
+
+    <article class="card">
+      <span class="tag">Dica</span>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTOGuy9Ck9sv7_uP7WE2iUK-2F9RLccxHJyg&s" alt="Troca de óleo de carro">
+      <h3 style="color:#70a6cc">Quando trocar o óleo do seu carro?</h3>
+      <p>Saiba a importância de manter as trocas de óleo em dia para prolongar a vida útil do motor.</p>
+      <a href="#">Ler mais...</a>
+    </article>
+
+    <article class="card">
+      <span class="tag">Notícia</span>
+      <img src="https://cdn.motor1.com/images/mgl/L3kkPl/454:0:7282:5464/lancamento-ford-mustang-de-setima-geracao-no-brasil.webp" alt="Carro esportivo">
+      <h3 style="color:#70a6cc">Mustang 2024: novidades e ficha técnica</h3>
+      <p>Confira as mudanças no novo Mustang e como ele promete conquistar os apaixonados por velocidade.</p>
+      <a href="#">Ler mais...</a>
+    </article>
+
+    <article class="card">
+      <span class="tag">Manutenção</span>
+      <img src="https://s2-autoesporte.glbimg.com/hrTqpaR7ZnS1xVcGv7hZ3IkS2EM=/0x0:620x300/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/s/0/ATGpymTtiAV1hgCyXagQ/2014-06-18-tiposdepneus.jpg" alt="Pneus de carro">
+      <h3 style="color:#70a6cc">Como escolher pneus para seu veículo</h3>
+      <p>Entenda os diferentes tipos de pneus e qual o mais indicado para seu estilo de condução.</p>
+      <a href="#">Ler mais...</a>
+    </article>
+
+  </div>
+</section>
+    <section id="servicos" class="card">
+      <h2>Nossos Serviços online</h2>
+      <ul>
+        <li>Compra e venda de carros de luxo</Canvas></li>
+        <li>Atendimento ao cliente</Canvas></li>
+        <li>agentademento para visita</Canvas></li>
+      </ul>
+    </section>
+   </div>
+     <section id="servicos para carros comprados com nosco" class="card">
+        <h2>Nossos Serviços presenciais</h2>
+        <ul>
+        <li>Serviços de funilaria e pintura</li>
+        <li>Troca de pneus e alinhamento</li>
+        <li>troca de oleo</li>
+        <ul>
+        </section>  
+
+    <section id="localizacao" class="card">
+      <h2>Localização</h2>
+      <p>Av. Central, 1234 - Centro, São Paulo/SP</p>
+      <p>Aberto de segunda a sábado, das 9h às 19h.</p>
+    </section>
+
+    <section id="contato" class="grid grid--2">
+      <div class="card">
+        <h2>Contato</h2>
+        <form onsubmit="event.preventDefault(); alert('Mensagem enviada! (simulação)');" class="grid">
+          <input required class="card" style="padding:12px" type="text" placeholder="Seu nome" />
+          <input required class="card" style="padding:12px" type="email" placeholder="Seu e-mail" />
+          <textarea required class="card" style="padding:12px" rows="4" placeholder="Sua mensagem"></textarea>
+          <button class="btn btn--primary" type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Informações</h2>
+        <p><strong>Atendimento:</strong> seg–sex, 9h às 18h</p>
+        <p><strong>E-mail:</strong> contato@autoprime.com</p>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
